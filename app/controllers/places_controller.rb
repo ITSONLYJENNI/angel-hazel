@@ -30,8 +30,6 @@ class PlacesController < ApplicationController
     end
   end
 
-  end
-
   def update
     @place = Place.find(params[:id])
     if @place.user != current_user
