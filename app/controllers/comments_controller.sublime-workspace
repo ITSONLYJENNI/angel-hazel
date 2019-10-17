@@ -1,0 +1,383 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"font",
+				"font-family\tproperty"
+			],
+			[
+				"min",
+				"minimum"
+			],
+			[
+				"pre",
+				"Precompile"
+			],
+			[
+				"text",
+				"text-decoration\tproperty"
+			],
+			[
+				"bor",
+				"border-right\tproperty"
+			],
+			[
+				"pad",
+				"padding-top\tproperty"
+			],
+			[
+				"i",
+				"icon"
+			],
+			[
+				"s",
+				"src\tAttr"
+			],
+			[
+				"li",
+				"link\tTag"
+			],
+			[
+				"font-s",
+				"font-size\tproperty"
+			],
+			[
+				"te",
+				"text-align\tproperty"
+			],
+			[
+				"cl",
+				"class\tAttr"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"marg",
+				"margin-top\tproperty"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/cleotildefernandez/Desktop/coding-environment/src/nomster/db/migrate/20191008004751_devise_create_users.rb",
+		"/Users/cleotildefernandez/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/cleotildefernandez/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/cleotildefernandez/Desktop/coding-environment/src/nomster/config/routes.rb",
+		"/Users/cleotildefernandez/Desktop/coding-environment/src/nomster/app/controllers/places_controller.rb",
+		"/Users/cleotildefernandez/Desktop/coding-environment/src/nomster/app/views/places/edit.html.erb",
+		"/Users/cleotildefernandez/Desktop/coding-environment/src/nomster/app/views/devise/passwords/edit.html.erb",
+		"/Users/cleotildefernandez/Desktop/coding-environment/src/nomster/db/migrate/20190924004800_create_places.rb",
+		"/Users/cleotildefernandez/Desktop/coding-environment/src/nomster/db/schema.rb",
+		"/Users/cleotildefernandez/Desktop/coding-environment/src/nomster/app/views/layouts/application.html.erb",
+		"/Users/cleotildefernandez/Desktop/coding-environment/src/nomster/app/assets/javascripts/application.js",
+		"/Users/cleotildefernandez/Desktop/coding-environment/src/nomster/app/assets/images/ep_naturalblack.png",
+		"/Users/cleotildefernandez/Desktop/coding-environment/src/nomster/app/assets/stylesheets/fonts.scss",
+		"/Users/cleotildefernandez/Desktop/coding-environment/src/nomster/app/assets/stylesheets/master.scss",
+		"/Users/cleotildefernandez/Desktop/coding-environment/src/nomster/app/assets/stylesheets/application.scss",
+		"/Users/cleotildefernandez/Desktop/coding-environment/src/nomster/Gemfile",
+		"/Users/cleotildefernandez/Desktop/coding-environment/src/nomster/app/views/places/index.html.erb",
+		"/Users/cleotildefernandez/Desktop/coding-environment/src/nomster/app/views/devise/sessions/new.html.erb",
+		"/Users/cleotildefernandez/Desktop/coding-environment/src/nomster/app/views/places/new.html.erb",
+		"/Users/cleotildefernandez/Desktop/coding-environment/src/nomster/app/models/place.rb",
+		"/Users/cleotildefernandez/Desktop/coding-environment/src/nomster/app/models/user.rb",
+		"/Users/cleotildefernandez/Desktop/coding-environment/src/nomster/db/migrate/20191008014612_alter_places_add_user_id_column.rb",
+		"/Users/cleotildefernandez/Desktop/coding-environment/src/nomster/app/views/places/show.html.erb",
+		"/Users/cleotildefernandez/Desktop/coding-environment/src/nomster/app/views/devise/passwords/new.html.erb",
+		"/Users/cleotildefernandez/Desktop/coding-environment/src/nomster/config/environments/production.rb",
+		"/Users/cleotildefernandez/Desktop/coding-environment/src/nomster/config/environments/development.rb",
+		"/Users/cleotildefernandez/Desktop/coding-environment/src/nomster/tmp/cache/assets/sprockets/v3.0/5u/5u-KZUvh2b3VJQJlN_lX50ezrKssiQYG-Ue1_WRDOso.cache",
+		"/Users/cleotildefernandez/Desktop/coding-environment/src/nomster/app/views/devise/registrations/new.html.erb",
+		"/Users/cleotildefernandez/Desktop/coding-environment/src/nomster/app/assets/stylesheets/application.css",
+		"/Users/cleotildefernandez/Desktop/coding-environment/src/splurty/app/assets/images/.keep",
+		"/Users/cleotildefernandez/Desktop/portfolio/me.jpg",
+		"/Users/cleotildefernandez/Desktop/coding-environment/src/splurty/app/assets/stylesheets/fonts.scss",
+		"/Users/cleotildefernandez/Desktop/coding-environment/src/splurty/app/views/layouts/application.html.erb",
+		"/Users/cleotildefernandez/Desktop/coding-environment/src/splurty/app/assets/fonts/webfontkit-20190911-145334/ostrichsansrounded-medium-webfont.ttf",
+		"/Users/cleotildefernandez/Desktop/coding-environment/src/splurty/app/assets/stylesheets/application.css",
+		"/Users/cleotildefernandez/Downloads/webfontkit-20190911-145334.zip",
+		"/Users/cleotildefernandez/Downloads/webfontkit-20190911-145334/ostrichsans-black-webfont.woff",
+		"/Users/cleotildefernandez/Downloads/webfontkit-20190911-145334/ostrichsans-bold-webfont.woff",
+		"/Users/cleotildefernandez/Desktop/coding-environment/src/splurty/app/assets/javascripts/application.js",
+		"/Users/cleotildefernandez/Desktop/coding-environment/src/splurty/app/views/quotes/index.html.erb",
+		"/Users/cleotildefernandez/Desktop/coding-environment/src/splurty/config/database.yml",
+		"/Users/cleotildefernandez/Desktop/coding-environment/mac-vagrant.md",
+		"/Users/cleotildefernandez/Desktop/coding-environment/windows-vagrant.md",
+		"/opt/vagrant/embedded/gems/2.2.5/gems/vagrant-2.2.5/lib/vagrant/errors.rb",
+		"/Users/cleotildefernandez/Desktop/hello-world-master/README.md",
+		"/Users/cleotildefernandez/Desktop/portfolio/style.css",
+		"/Users/cleotildefernandez/Desktop/portfolio/index.html"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "comments_controller.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"com",
+				"app/controllers/comments_controller.rb"
+			],
+			[
+				"comm",
+				"app/controllers/comments_controller.rb"
+			],
+			[
+				"rou",
+				"config/routes.rb"
+			],
+			[
+				"user",
+				"app/models/user.rb"
+			],
+			[
+				"creat_comm",
+				"db/migrate/20191016184134_create_comments.rb"
+			],
+			[
+				"plac",
+				"app/controllers/places_controller.rb"
+			],
+			[
+				"ma",
+				"app/assets/stylesheets/master.scss"
+			],
+			[
+				"show",
+				"app/views/places/show.html.erb"
+			],
+			[
+				"appl",
+				"config/application.yml"
+			],
+			[
+				"pla",
+				"app/models/place.rb"
+			],
+			[
+				"alter",
+				"db/migrate/20191015022948_alter_places_add_lat_and_lng.rb"
+			],
+			[
+				"passw",
+				"app/views/devise/passwords/new.html.erb"
+			],
+			[
+				"passwords new",
+				"tmp/cache/assets/sprockets/v3.0/5u/5u-KZUvh2b3VJQJlN_lX50ezrKssiQYG-Ue1_WRDOso.cache"
+			],
+			[
+				"pl",
+				"app/models/place.rb"
+			],
+			[
+				"use",
+				"app/models/user.rb"
+			],
+			[
+				"devise",
+				"db/migrate/20191008004751_devise_create_users.rb"
+			],
+			[
+				"",
+				"app/assets/stylesheets/master.scss"
+			],
+			[
+				"schem",
+				"db/schema.rb"
+			],
+			[
+				"pro",
+				"config/environments/production.rb"
+			],
+			[
+				"dev",
+				"config/environments/development.rb"
+			],
+			[
+				"application.html",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"gemfile",
+				"Gemfile"
+			],
+			[
+				"config/appl",
+				"config/application.rb"
+			],
+			[
+				"deve",
+				"config/environments/development.rb"
+			],
+			[
+				"layoutsappl",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"quote",
+				"app/models/quote.rb"
+			],
+			[
+				"application.rb",
+				"config/application.rb"
+			],
+			[
+				"stylesheet.css",
+				"app/assets/stylesheets/application.css"
+			],
+			[
+				"application.ht",
+				"app/views/layouts/application.html.erb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 208.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
