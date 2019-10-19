@@ -98,15 +98,19 @@
 <div class="clear"></div>
 
 <div class="row">
-  <% @place.comments.each do |comment| %>
-    <div class="ol-12 col-sm-6">
+<% @place.comments.each do |comment| %>
+  
+  <% if place.comments.present? %>
+    <div class="col-12">
       <blockquote>
-        <% if comment.humanized_rating.present? %>
-          <b><%= comment.humanized_rating %></b> -
+        <% if place.comments.last.humanized_rating.present? %>
+          <b><%= place.comments.last.humanized_rating %></b> -
         <% end %>
-        <%= comment.message %>
-        <small><%= comment.user.email %></small>
+        <%= place.comments.last.message %>
+        <small><%= place.comments.last.user.email %></small>
       </blockquote>
     </div>
   <% end %>
+
+<% end %>
 </div>
