@@ -4,46 +4,46 @@
   <br/><br/>
   <p><%= @place.description %></p>
 
-<style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
+  <style>
+        /* Always set the map height explicitly to define the size of the div
+         * element that contains the map. */
 
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-</style>
-
-<% if @place.latitude.present? && @place.longitude.present? %>
-
-  <script>
-
-    function initMap() {
-      var myLatLng = {lat: <%= @place.latitude %>, lng: <%= @place.longitude %>};
-
-      var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 12,
-          center: myLatLng
-          });
-
-      var marker = new google.maps.Marker({
-          position: myLatLng,
-          map: map,
-          title: 'Hello World!'
-          });
+        /* Optional: Makes the sample page fill the window. */
+        html, body {
+          height: 100%;
+          margin: 0;
+          padding: 0;
         }
-  </script>
-  <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0btny3khJZ8Pzp5_R-ri3u6myKOK40aE&callback=initMap">
-  </script>
+  </style>
+
+  <% if @place.latitude.present? && @place.longitude.present? %>
+
+    <script>
+
+      function initMap() {
+        var myLatLng = {lat: <%= @place.latitude %>, lng: <%= @place.longitude %>};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 12,
+            center: myLatLng
+            });
+
+        var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            title: 'Hello World!'
+            });
+          }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0btny3khJZ8Pzp5_R-ri3u6myKOK40aE&callback=initMap">
+    </script>
 
     <div id="map"></div>
 
-<% end %>
+  <% end %>
 
-<br />
+  <br />
 
   <div class="float-right">
     <% if current_user && current_user == @place.user %>
@@ -51,66 +51,52 @@
       <%= link_to 'Destroy', place_path(@place), method: :delete, data: {confirm: 'Are you sure you want to delete this?'},class: 'btn btn-danger' %>
     <% end %>
   </div>
-</div>
 
-<div class="clear"></div>
-<%= simple_form_for @comment, url: 'place_comments_path(@place)' do |f| %>
-  <%= f.input :message %>
-  <%= f.input :rating, as: :select, collection: Comment::RATINGS %>
-  <%= f.submit "Add a Comment", class: 'btn btn-primary' %>
-<% end %>
-
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Add a comment
-</button>
+  <br /><br />
+  <div class="clear"></div>
 
 <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">×</span>
-        </button>
-        <h4 class="modal-title" id="myModalLabel">Add a comment</h4>
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">Add a comment</h4>
+        </div>
+        <%= simple_form_for @comment, url: place_comments_path(@place) do |f| %>
+          <div class="modal-body">
+            <%= f.input :message %>
+            <%= f.input :rating, as: :select, collection: Comment::RATINGS %>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <%= f.submit "Add a Comment", class: 'btn btn-primary' %>
+          </div>
+        <% end %>
       </div>
-      <%= simple_form_for @comment, url: place_comments_path(@place) do |f| %>
-        <div class="modal-body">
-          <%= f.input :message %>
-          <%= f.input :rating, as: :select, collection: Comment::RATINGS %>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <%= f.submit "Add a Comment", class: 'btn btn-primary' %>
-        </div>
-      <% end %>
     </div>
   </div>
-</div>
-<div class="col-10 offset-1">
-  <h1 class="float-left">Comments</h1>
+  <div class="col-10 offset-1">
+    <h1 class="float-left">Comments</h1>
   <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#myModal">
+    <button type="button" class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#myModal">
     Add a comment
-  </button>
+    </button>
 
-<div class="clear"></div>
+  <div class="clear"></div>
 
-<div class="row">
-<% @place.comments.each do |comment| %>
-  
-  <% if place.comments.present? %>
-    <div class="col-12">
+  <div class="row">
+
+  <% @place.comments.each do |comment| %>
+    <div>
       <blockquote>
-        <% if place.comments.last.humanized_rating.present? %>
-          <b><%= place.comments.last.humanized_rating %></b> -
-        <% end %>
-        <%= place.comments.last.message %>
-        <small><%= place.comments.last.user.email %></small>
+        <b><%= comment.rating %></b> -
+          <%= comment.message %>
+        <small><%= comment.user.email %></small>
       </blockquote>
     </div>
   <% end %>
 
-<% end %>
 </div>
