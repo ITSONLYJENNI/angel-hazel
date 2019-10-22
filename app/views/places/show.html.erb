@@ -43,6 +43,8 @@
 
   <% end %>
 
+
+
   <br />
 
   <div class="float-right">
@@ -84,6 +86,12 @@
     <button type="button" class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#myModal">
     Add a comment
     </button>
+  
+  <div class="clear"></div>
+    <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
+      <%= f.input :caption %>
+      <%= f.submit "Add a Photo", class: 'btn btn-primary' %>
+    <% end %>
 
   <div class="clear"></div>
 

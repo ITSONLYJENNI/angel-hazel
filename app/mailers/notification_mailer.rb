@@ -1,7 +1,7 @@
 class NotificationMailer < ApplicationMailer
   default from: "no-reply@nomsterapp.com"
 
-  def comment_added(comment)
+  def NotificationMailer.comment_added.deliver(comment)
     @place = comment.place
     @place_owner = @place.user
 
