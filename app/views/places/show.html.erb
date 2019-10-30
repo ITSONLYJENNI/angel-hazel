@@ -86,11 +86,14 @@
     <button type="button" class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#myModal">
     Add a comment
     </button>
-  
+
   <div class="clear"></div>
     <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
       <%= f.input :caption %>
+      <%= f.input :picture %>
+      <%= f.file_field :image %>
       <%= f.submit "Add a Photo", class: 'btn btn-primary' %>
+          <%= image_tag @place.picture.url %>
     <% end %>
 
   <div class="clear"></div>

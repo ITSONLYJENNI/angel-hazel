@@ -1,6 +1,6 @@
-class Photo < ApplicationRecord
-  def show
+class Photo < ActiveRecord::Base
   belongs_to :user
   belongs_to :place
-  end
+
+  mount_uploader :picture, PictureUploader
 end
