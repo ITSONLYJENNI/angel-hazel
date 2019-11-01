@@ -91,9 +91,7 @@
     <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
       <%= f.input :caption %>
       <%= f.input :picture %>
-      <%= f.file_field :image %>
       <%= f.submit "Add a Photo", class: 'btn btn-primary' %>
-          <%= image_tag @place.picture.url %>
     <% end %>
 
   <div class="clear"></div>
@@ -106,6 +104,15 @@
         <b><%= comment.rating %></b> -
           <%= comment.message %>
         <small><%= comment.user.email %></small>
+      </blockquote>
+    </div>
+  <% end %>
+
+   <% @place.photos.each do |photo| %>
+    <div>
+      <blockquote>
+        <p><%= photo.caption %></p> 
+        <%= image_tag photo.picture.url, class: 'show-image-size' %>
       </blockquote>
     </div>
   <% end %>
